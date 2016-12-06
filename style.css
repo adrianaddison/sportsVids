@@ -1,0 +1,112 @@
+/* BASE STYLES --------*/
+body {
+background: #ffffff;
+color: #967878;
+font-family: "Open Sans", Helvetica, Arial, sans-serif;
+font-size: 15px;
+}
+
+video {
+  margin: 10%;
+  width: 60%;
+}
+
+h1, h2, h3, h4, h5 {
+font-family: "Jaldi", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+color: #ffffff;
+font-size: 50px;
+font-weight: normal;
+margin-bottom: 0;
+}
+
+h2 {
+color: #503226;
+font-size: 26px;
+margin: 10px 0;
+font-weight: normal;
+}
+
+h3 {
+color: #503226;
+font-size: 19px;
+font-weight: normal;
+margin: 10px 0;
+}
+
+p {
+line-height: 30px;
+}
+
+sup {
+font-size: 60%;
+padding: 0 4px;
+}
+
+.container {
+  margin: auto;
+  max-width: 1000px;
+  padding: 40px 20px 70px;
+}
+
+.logo {
+  width: 50px;
+  float: left;
+  margin-right: 10px;
+}
+
+.smallbold {
+  color: rgba(0,0,0,0.4);
+  display: block;
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  border-bottom: 3px solid transparent; /* Necessary for :hover & .active */
+  color: #FF512F;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  margin: 0 12px 0 0;
+  padding: 4px 2px;
+  text-decoration: none;
+  font-family: "Jaldi", Helvetica, Arial, sans-serif;
+}
+
+.navigation a.active,
+.navigation a:hover {
+  border-bottom-color: #fbc2c3;
+}
+
+.navigation a.active {
+  color: #b1290e;
+}
+
+/* LAYOUT STYLES --------*/
+/* HEADER --*/
+.header {
+  padding: 20px;
+}
+
+.header .navigation {
+  float: left;
+}
+
+.header .navigation a {
+  text-transform: uppercase;
+}

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="utf-8">
   <title>Addison Videos</title>
-  <link href="https://fonts.googleapis.com/css?family=Jaldi:400|Open+Sans:400,600" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Jaldi:400|Open+Sans:400,600" rel="stylesheet">
 
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
   <link rel="stylesheet" type="text/css" href="clearfix.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
@@ -19,24 +20,25 @@
       </ul>
     </nav>
   </header>
-  <video controls>
+  <div id="video-container">
+    <!-- Video -->
+    <video id="video" width="640" height="365">
+      <!-- <source src="videos/mikethefrog.webm" type="video/webm">
+      <source src="videos/mikethefrog.ogv" type="video/ogv"> -->
       <source src="videos/Clip61.m4v" type="video/mp4">
-
-  </video>
-
-  <video id="myVideo" controls>
-  <source src="videos/Clip61.m4v" type="video/mp4">
-  Your browser does not support the video tag.
-  </video>
-  <div id="controls">
-    <button id="start">Play</button>
-    <button id="stop" disabled>Stop</button>
-    <button id="pause" disabled>Pause</button>
-    <button id="plus" title="Volum" disabled>Up</button>
-    <button id="minus" title="Volum" disabled>Down</button>
-    <button id="mute" disabled>Mute</button>
-  </div>
-    <div id="progressbar"> <div id="loadingprogress"></div>
+      <p>
+        Your browser doesn't support HTML5 video.
+        <a href="videos/Clip61.m4v">Download</a> the video instead.
+      </p>
+    </video>
+    <!-- Video Controls -->
+    <div id="video-controls">
+      <button type="button" id="play-pause" class="play">Play</button>
+      <input type="range" id="seek-bar" value="0">
+      <button type="button" id="mute">Mute</button>
+      <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+      <button type="button" id="full-screen">Full-Screen</button>
+    </div>
   </div>
   <footer>
     <nav class="navigation footer">

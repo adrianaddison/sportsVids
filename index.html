@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="header clearfix">
-    <p>Darian and Diego 2016 Football Season back2back</p>
+    <h1>Darian and Diego 2016 Football Season</h1>
     <nav class="navigation header">
       <ul>
         <li><a href="#" title="Home">Home</a></li>
@@ -20,10 +20,15 @@
     </nav>
   </header>
 
-  <video controls>
+  <video id="myVideo" controls>
   <source src="videos/Clip61.m4v" type="video/mp4">
   Your browser does not support the video tag.
   </video>
+  <div id="controls">
+    <button id="start">Play</button> <button id="stop" disabled>Stop</button> <button id="pause" disabled>Pause</button> <button id="plus" title="Volum" disabled>Up</button> <button id="minus" title="Volum" disabled>Down</button>
+    <button id="mute" disabled>Mute</button> </div>
+    <div id="progressbar"> <div id="loadingprogress"></div> <div id="butterfly"></div> 
+  </div>
   <footer>
     <nav class="navigation footer">
       <ul>

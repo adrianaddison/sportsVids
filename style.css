@@ -1,3 +1,14 @@
+body {
+  background-position: 0 24px;
+  font-size: 13px;
+  color: #a0a0a0;
+  background: #000;
+  font-family: Arial,Helvetica,sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
 #video-container {
 	width: 640px;
 	height: 365px;
@@ -55,4 +66,10 @@ button:hover {
 
 #volume-bar {
 	width: 60px;
+}
+
+.banner {
+  background-size: auto;
+  background-image: url('images/sideline.jpg');
+  height: 50px;
 }

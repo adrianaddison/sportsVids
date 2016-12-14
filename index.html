@@ -8,24 +8,26 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
   <link rel="stylesheet" type="text/css" href="clearfix.css">
   <link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
 <body>
-  <header class="header clearfix">
-    <h1>Darian and Diego 2016 Football Season</h1>
-    <nav class="navigation header">
-      <ul>
-        <li><a href="#" title="Home">Home</a></li>
-        <li><a href="#" title="About">About</a></li>
-        <li><a href="#" title="Contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section class="banner">
+<!--
+    <h1>Darian and Diego 2016 Football Season</h1> -->
+    <ul class="topnav" id="myTopnav">
+      <li><a class="active" href="#home">Darian &amp Diego 2016</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li class="icon">
+          <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+      </li>
+    </ul>
+  <!-- <section class="banner">
 
-  </section>
+  </section> -->
   <div id="video-container">
     <!-- Video -->
-    <video id="video" width="640" height="365">
+    <video id="video" width="100%">
       <source src="videos/Clip61.m4v" type="video/mp4">
       <p>
         Your browser doesn't support HTML5 video.
@@ -42,13 +44,13 @@
     </div>
   </div>
   <footer>
-    <nav class="navigation footer">
+    <!-- <nav class="navigation footer">
       <ul>
         <li><a href="#" title="Home">Home</a></li>
         <li><a href="#" title="About">About</a></li>
         <li><a href="#" title="Contact">Contact</a></li>
       </ul>
-    </nav>
+    </nav> -->
   </footer>
   <script src="main.js"></script>
 </body>

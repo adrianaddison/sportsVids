@@ -1,3 +1,12 @@
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
  window.onload = function () {
    // video
    var video = document.getElementById('video');
@@ -10,7 +19,7 @@
    // sliders
    var seekBar = document.getElementById('seek-bar');
    var volumeBar = document.getElementById('volume-bar');
- 
+
 
   // Evern listener for the play/pause button
   playButton.addEventListener('click', function() {
